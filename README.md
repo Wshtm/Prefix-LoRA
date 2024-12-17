@@ -12,7 +12,7 @@
 ``cd transformer; pip install -e .; Download xsum dataset``
 
 -----------------------------------------------------
-# Train & Solving NLU Problems with BART model
+# Train with BART model
 ## Hybrid Method:
 ```python
 cd seq2seq; 
@@ -31,8 +31,16 @@ cd seq2seq;
 
 python train_bart.py --use_prefix_tuning no --use_lora yes --mode xsum --preseqlen 200 --do_train yes --fp16 yes --bsz 2  --epoch 30  --gradient_accumulation_step 3 --learning_rate 0.00005  --mid_dim 800
 ```
+# Solving NLU Problems 
+```python
+cd seq2seq; 
 
+python train_bart.py --use_prefix_tuning {same as training} --use_lora {same as training} --mode xsum --do_train no --prefix_model_path {checkpoint_path} --preseqlen {same as training} --mid_dim {same as training}
+```
 # Interfaces
-### Interfaces are as follow:
+## Training Interfaces are as follow:
 <img src="run.png" alt="run.png">
 <img src="train.png" alt="train.png">
+
+## Solving NLU Problems Interfaces are as follow:
+<img src="decode.png" alt="decode.png">
