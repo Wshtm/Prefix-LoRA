@@ -319,34 +319,8 @@ if __name__ == '__main__':
                                                           8, 8, args.seed, args.length_pen, args.epoch)
 
     COMMANDLINE += app
+ 
+    os.system(COMMANDLINE) 
 
-
-
-    # with open(Model_FILE + '.sh', 'w') as f:
-        # print(COMMANDLINE, file=f)
-
-
-    # print(COMMANDLINE)
-    if args.submit == 'no':
-        os.system(COMMANDLINE) # textattack/roberta-base-ag-news # textattack/roberta-base-imdb
-    # #
-    elif args.submit == 'yes':
-        if args.use_big == 'no':
-            full_command = "nlprun -a lisa_apex_latest -g 1 -n {} -x jagupard4,jagupard5,jagupard6,jagupard7,jagupard8 \'{}\'".format(Model_FILE, COMMANDLINE)
-        elif args.use_big == 'yes':
-            full_command = "nlprun -p high -a lisa_apex_latest -g 1 -n {} -x jagupard4,jagupard5,jagupard6,jagupard7,jagupard8," \
-                           "jagupard10,jagupard11,jagupard12,jagupard13,jagupard14,jagupard15,jagupard16,jagupard17,jagupard18," \
-                           "jagupard19,jagupard20,jagupard21,jagupard22,jagupard23," \
-                           "jagupard24,jagupard25,jagupard28,jagupard29 \'{}\'".format(Model_FILE, COMMANDLINE)
-
-        elif args.use_big == 'yes2':
-            full_command = "nlprun -p high -a lisa_apex_latest2 -g 1 -n {} -x jagupard4,jagupard5,jagupard6,jagupard7,jagupard8," \
-                           "jagupard10,jagupard11,jagupard12,jagupard13,jagupard14,jagupard15,jagupard16,jagupard17,jagupard18," \
-                           "jagupard19,jagupard20,jagupard21,jagupard22,jagupard23," \
-                           "jagupard24,jagupard25,jagupard26,jagupard27 \'{}\'".format(Model_FILE, COMMANDLINE)
-        else:
-            full_command = "nlprun -a lisa_apex_latest -m jagupard26 -p high -g 1 -n {} \'{}\'".format(Model_FILE, COMMANDLINE)
-        print(full_command)
-        os.system(full_command)
 
 
