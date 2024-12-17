@@ -1,11 +1,11 @@
 # Prefix-LoRA: Combining Prefix Tuning with LoRA
-
+(脚本部分参考自 https://github.com/XiangLi1999/PrefixTuning.git)
 -----------------------------------------------------
 ## Prerequisites:
 - Python 3.8
 - Pytorch-lightning 1.0
 - Pytorch
-- 
+  
 ## Setup:
 
 ``cd transformer; pip install -e .; Download xsum dataset``
