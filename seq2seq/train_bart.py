@@ -1,7 +1,7 @@
 import os, sys
 import argparse
 
-# 此脚本参考自https://github.com/XiangLi1999/PrefixTuning.git
+
 # 此脚本用于配置超参数，并通过调用finetune.py来进行训练
 # 在该脚本中，可以使用“use_prefix_tuning”参数和“use_lora”参数来切换训练模式
 # 算法核心部分的注释在finetune.py中
