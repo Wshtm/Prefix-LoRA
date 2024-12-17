@@ -1,0 +1,13 @@
+{
+    "val": [
+        {
+            "val_avg_loss": 8.300289154052734,
+            "val_avg_rouge1": 8.8862,
+            "val_avg_rouge2": 0.0,
+            "val_avg_rougeL": 8.8862,
+            "val_avg_gen_time": 1.2832660675048828,
+            "val_avg_gen_len": 62.0,
+            "step_count": 1
+        }
+    ]
+}
