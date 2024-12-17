@@ -41,6 +41,7 @@ python train_bart.py ---use_prefix_tuning {same as training} --use_lora {same as
 ### Training interfaces are as follow:
 <img src="run.png" alt="run.png">
 <img src="train.png" alt="train.png">
+
 ### Decoding interfaces are as follow:
 <img src="run.png" alt="run.png">
 <img src="train.png" alt="train.png">
