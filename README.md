@@ -1,5 +1,6 @@
 # Prefix-LoRA: Combining Prefix Tuning with LoRA
-(脚本部分参考自 https://github.com/XiangLi1999/PrefixTuning.git)
+
+- (脚本部分参考自 https://github.com/XiangLi1999/PrefixTuning.git)
 -----------------------------------------------------
 ## Prerequisites:
 - Python 3.8
