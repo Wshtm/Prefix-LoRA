@@ -12,7 +12,7 @@
 ``cd transformer; pip install -e .; Download xsum dataset``
 
 -----------------------------------------------------
-# Train & Solving NLU Problems
+# Train & Solving NLU Problems with BART model
 ## Hybrid Method:
 ```python
 cd seq2seq; 
