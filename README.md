@@ -1,9 +1,14 @@
 # Prefix-LoRA: Combining Prefix Tuning with LoRA
 
 -----------------------------------------------------
+## Prerequisites:
+- Python 3.8
+- Pytorch-lightning 1.0
+- Pytorch
+- 
 ## Setup:
 
-``cd transformer; pip install -e .``
+``cd transformer; pip install -e .; Download xsum dataset``
 
 -----------------------------------------------------
 ## Train via Hybrid Method:
@@ -24,5 +29,3 @@ cd seq2seq;
 
 python train_bart.py --use_prefix_tuning no --use_lora yes --mode xsum --preseqlen 200 --do_train yes --fp16 yes --bsz 2  --epoch 30  --gradient_accumulation_step 3 --learning_rate 0.00005  --mid_dim 800
 ```
-
-
