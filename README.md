@@ -1,5 +1,5 @@
 # Prefix-LoRA: Combining Prefix Tuning with LoRA
-- 代码核心部分与注释详见./seq_2_seq/train_bart.py与./seq_2_seq/finetune.py
+- 代码核心部分与注释详见./seq2seq/train_bart.py 与 ./seq2seq/finetune.py
 - (部分参考自 https://github.com/XiangLi1999/PrefixTuning.git)
 -----------------------------------------------------
 ## Prerequisites:
