@@ -31,6 +31,7 @@ cd seq2seq;
 
 python train_bart.py --use_prefix_tuning no --use_lora yes --mode xsum --preseqlen 200 --do_train yes --fp16 yes --bsz 2  --epoch 30  --gradient_accumulation_step 3 --learning_rate 0.00005  --mid_dim 800
 ```
-###Training interfaces are as follow:
-<img src="train.png" alt="train.png">
+### Training interfaces are as follow:
 <img src="run.png" alt="run.png">
+<img src="train.png" alt="train.png">
+
