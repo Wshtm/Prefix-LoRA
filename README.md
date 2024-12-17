@@ -4,7 +4,7 @@
 -----------------------------------------------------
 ## Prerequisites:
 - Python 3.8
-- Pytorch-lightning 1.0
+- Pytorch-lightning 0.9.0
 - Pytorch
   
 ## Setup:
